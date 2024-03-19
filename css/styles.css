@@ -1,8 +1,6 @@
-* {
-  font-family: "Montserrat";
-}
-  
+/* GENERAL ELEMENTS */
 body {
+  font-family: "Montserrat";
   background-color: #f2e0d2;
   margin: 0px;
   display: flex;
@@ -36,6 +34,7 @@ p {
   padding: 0.5rem;
 }
 
+/* HEADER */
 header {
   background-color:  #3e1d0c;
   padding: 1rem;
@@ -49,6 +48,7 @@ header > img {
   max-width: 15rem;
 }
 
+/* NAVBAR */
 nav {
   background-color:  #d0604c;
 }
@@ -79,6 +79,7 @@ nav a:hover {
   color: #3e1d0c;
 }
 
+/* MAIN CONTENT LAYOUT */
 main {
   flex: 1;
   display: flex;
@@ -103,6 +104,39 @@ article {
   justify-content: space-between;
 }
 
+/* CARDS */
+.image-card {
+  background-size: cover;
+  background-position: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.image-card:hover {
+  transform: scale(1.02);
+}
+
+/* Yes, these selectors are a little over-specific, but I need to load a different background
+image for each card */
+.promo-card {
+  background-image: url('../images/haircut.jpg');
+}
+
+.dye-card {
+  background-image: url('../images/dye.jpg');
+}
+
+.makeup-card {
+  background-image: url('../images/makeup.jpg');
+}
+
+.manicure-card {
+  background-image: url('../images/manicure.jpg');
+}
+
+/* FOOTER */
 footer {
   display: flex;
   align-items: center;
@@ -120,33 +154,4 @@ footer div {
 footer img {
   width: 100%;
   max-width: 25rem;
-}
-
-.image-card {
-  background-size: cover;
-  background-position: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border-radius: 4px;
-  transition: transform 0.3s ease;
-}
-
-.image-card:hover {
-  transform: scale(1.03);
-}
-
-.promo-card {
-  background-image: url('../images/haircut.jpg');
-}
-
-.dye-card {
-  background-image: url('../images/dye.jpg');
-}
-
-.makeup-card {
-  background-image: url('../images/makeup.jpg');
-}
-
-.manicure-card {
-  background-image: url('../images/manicure.jpg');
 }
